@@ -61,34 +61,34 @@
 ### REST API endpoints
 
 1. Реєстрація, авторизація та вихід користувачів
-    - POST /api/auth/register - Реєстрація нового користувача
-    - POST /api/auth/login - Вхід користувача до системи
-    - POST /api/auth/logout - Вихід користувача з системи
+    - `POST /api/auth/register` - Реєстрація нового користувача
+    - `POST /api/auth/login` - Вхід користувача до системи
+    - `POST /api/auth/logout` - Вихід користувача з системи
 
 2. Функціонал для користувача
-    - GET /api/home - Перегляд головної сторінки з популярною та рекомендованою музикою
-    - GET /api/tracks/{track_id} - Отримання інформації про конкретний музичний трек
-    - GET /api/tracks/search?name={name} - Пошук музичних треків за назвою
-    - GET /api/tracks/search?artist={artist} - Пошук музичних треків за ім'ям виконавця
-    - GET /api/tracks/search?album={album} - Пошук музичних треків за назвою альбому
-    - GET /api/tracks/search?genre={genre} - Пошук музичних треків за жанром
-    - GET /api/tracks/search?release_date={release_date} - Пошук музичних треків за датою випуску
-    - POST /api/tracks/{track_id}/rate - Оцінювання музичного треку
-    - POST /api/playlists - Створення нового плейлиста
-    - DELETE /api/playlists/{playlist_id} - Видалення плейлиста
-    - GET /api/playlists/{playlist_id} - Отримання вмісту конкретного плейлисту
-    - GET /api/playlists/search?name={name} - Пошук плейлистів за назвою
-    - POST /api/playlists/{playlist_id}/tracks - Додавання треку до плейлиста
-    - DELETE /api/playlists/{playlist_id}/tracks/{track_id} - Видалення треку з плейлиста
-    - GET /api/tracks/{track_id}/play - Прослуховування музичного треку
-    - GET /api/history - Отримання історії прослуховувань користувача
+    - `GET /api/home` - Перегляд головної сторінки з популярною та рекомендованою музикою
+    - `GET /api/tracks/{track_id}` - Отримання інформації про конкретний музичний трек
+    - `GET /api/tracks/search?name={name}` - Пошук музичних треків за назвою
+    - `GET /api/tracks/search?artist={artist}` - Пошук музичних треків за ім'ям виконавця
+    - `GET /api/tracks/search?album={album}` - Пошук музичних треків за назвою альбому
+    - `GET /api/tracks/search?genre={genre}` - Пошук музичних треків за жанром
+    - `GET /api/tracks/search?release_date={release_date}` - Пошук музичних треків за датою випуску
+    - `POST /api/tracks/{track_id}/rate` - Оцінювання музичного треку
+    - `POST /api/playlists` - Створення нового плейлиста
+    - `DELETE /api/playlists/{playlist_id}` - Видалення плейлиста
+    - `GET /api/playlists/{playlist_id}` - Отримання вмісту конкретного плейлисту
+    - `GET /api/playlists/search?name={name}` - Пошук плейлистів за назвою
+    - `POST /api/playlists/{playlist_id}/tracks` - Додавання треку до плейлиста
+    - `DELETE /api/playlists/{playlist_id}/tracks/{track_id}` - Видалення треку з плейлиста
+    - `GET /api/tracks/{track_id}/play` - Прослуховування музичного треку
+    - `GET /api/history` - Отримання історії прослуховувань користувача
 
 3. Функціонал для адміністратора
-    - POST /api/tracks - Додавання нового музичного треку
-    - PUT /api/tracks/{track_id} - Редагування інформації про музичний трек
-    - DELETE /api/tracks/{track_id} - Видалення музичного треку
-    - PUT /api/users/{user_id} - Редагування акаунта користувача
-    - DELETE /api/reviews/{review_id} - Видалення відгуку або оцінки
+    - `POST /api/tracks` - Додавання нового музичного треку
+    - `PUT /api/tracks/{track_id}` - Редагування інформації про музичний трек
+    - `DELETE /api/tracks/{track_id}` - Видалення музичного треку
+    - `PUT /api/users/{user_id}` - Редагування акаунта користувача
+    - `DELETE /api/reviews/{review_id}` - Видалення відгуку або оцінки
 
 ### ER Diagram
 ![ER Diagram](ER_diagram.png)
